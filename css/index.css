@@ -1,0 +1,105 @@
+.container {
+    max-width: 60%;
+    border: 2px solid black;
+    margin-left: 260px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 13px;
+    padding-top: 0px;
+}
+
+.nav-bar {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.nav-item {
+    min-width: 80px;
+    text-align: center;
+    padding: 3px;
+}
+
+#item-2 {
+    border-left: 2px solid black;
+    border-right: 2px solid black;    
+}
+
+.logo {
+    padding-top: 9px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-head {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(59, 71, 84);
+    font-size: 28px;
+    font-weight: 700;
+    width: 441px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.sub-head {
+    color: rgb(121, 141, 163);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.form {
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 2%;
+}
+
+#form-kiri {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#form-kanan {
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    width: 206px;
+    height: 88px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    text-align: center;
+    color: rgb(121, 141, 163);
+    font-family: 'Roboto', sans-serif;
+}

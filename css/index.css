@@ -1,8 +1,10 @@
 .container {
-    background-color:rgb(59, 71, 84);
+    background-color:rgb(172, 172, 172);
     margin-left: 20%;
     margin-right: 20%;
     font-family: 'Open Sans', sans-serif;
+    border: 5px solid rgb(0, 26, 51);
+    border-radius: 3px;
 }
 
 .header {
@@ -77,6 +79,8 @@
 }
 
 #form-kiri {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-style: italic;
     font-size: 11px;
@@ -112,16 +116,31 @@ select {
     border: 2px solid black;
 }
 
+#slide-coment {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: left;
+    font-style: normal;
+    font-size: 11px;
+}
+
+#people {
+    margin-left: 20px;
+}
+
+#foto {
+    width: 60px;
+    height: auto;
+}
+
 .button1 {
     width: 214px;
     height: 40px;
     color: white;
     background-color: rgb(32, 33, 43);
 }
-
-
-
-
 
 .footer {
     display: flex;

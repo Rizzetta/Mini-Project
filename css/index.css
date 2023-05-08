@@ -1,10 +1,15 @@
 .container {
-    background-color:rgb(172, 172, 172);
+    background-color:#f5f5f5;
     margin-left: 20%;
     margin-right: 20%;
     font-family: 'Open Sans', sans-serif;
-    border: 5px solid rgb(0, 26, 51);
+    border: 2px solid rgb(207, 207, 207);
     border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .header {
@@ -90,7 +95,7 @@
 
 #form-kanan {    
     border: 1px solid black;
-    background-color: aliceblue;
+    background-color: rgb(203, 204, 204);
     border-radius: 5px;
     margin-left: 40px;
     padding: 30px;
@@ -127,12 +132,15 @@ select {
 }
 
 #people {
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 #foto {
     width: 60px;
     height: auto;
+    border: 3px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 
 .button1 {

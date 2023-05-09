@@ -29,29 +29,49 @@
         <!--Form Menu-->
             <section class="menu">
                 <div class="form" id="form-kiri">
-                    <img src="./assets/vege2.png" alt="gambarsayur">
+                    <img src="./assets/vege2.png" alt="gambarsayur" id="sayur">
                     <p>"setiap hari beli sayur buah yang fresh disini "</p>
-
-                    <div id="slide-coment">
-                        <img id="foto" src="./assets/6.jpg" alt="profile-pic">
-                        <div id="people">
-                            <h3>Florence Hudges</h3>
-                            <p>Ibu Rumah Tangga, 28</p>
+                    
+                    <div class="slider"> 
+                        <div class="slide-coment" id="pic1">
+                            <img src="./assets/1.jpg" alt="profile-pic">
+                            <div class="people">
+                                <h3>Florence Hudges</h3>
+                                <p>Ibu Rumah Tangga, 28</p>    
+                            </div>       
                         </div>
-                        <!-- <img id="foto" src="./assets/6.jpg" alt="profile-pic">
-                        <div id="people">
-                            <h3>Florence Hudges</h3>
-                            <p>Ibu Rumah Tangga, 28</p>
+                        <div class="slide-coment" id="pic2">
+                            <img src="./assets/2.jpg" alt="profile-pic">
+                            <div class="people">
+                                <h3>Ricky R</h3>
+                                <p>Teknisi, 25</p>    
+                            </div>       
+                        </div>     
+                        <div class="slide-coment" id="pic3">
+                            <img src="./assets/3.jpg" alt="profile-pic">
+                            <div class="people">
+                                <h3>Rizzetta Cornelia</h3>
+                                <p>Manager, 26</p>    
+                            </div>       
+                        </div>     
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <br>
+                    <div>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>  
+                    <div class="space-benefit">
+                        <div class="header-space">
+                            <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
                         </div>
-                        <img id="foto" src="./assets/6.jpg" alt="profile-pic">
-                        <div id="people">
-                            <h3>Florence Hudges</h3>
-                            <p>Ibu Rumah Tangga, 28</p>
-                        </div> -->
-                    </div> 
+                    </div>         
                 </div>
+                
                 <div class="form" id="form-kanan">
-                    <h3 style="margin-bottom: 10px;">Contact Us</h3>
+                    <h3 style="margin: 0px;">Contact Us</h3>
                     <p style="font-size: 11px; padding-bottom: 8%;">Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
                     <form action="#" class="form-utama">
                         <label for="input-nama">Your Name:</label><br>
@@ -76,6 +96,6 @@
     <footer class="footer">
         <p>Copyrights © 2023 Ricky R.</p>
     </footer>
-    
+    <script src="./js/index.js"></script>
 </body>
 </html>

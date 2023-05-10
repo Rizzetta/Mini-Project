@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>E-Groceries</title>
-</head>
-<body class="container">
-    <!--header-->
-    <header class="header">
-        <div class="logo">moqups</div>
-        <div class="nav-bar">
-            <div class="nav-item"><a href="#home">Home</a></div>
-            <div class="nav-item" id="item-2">Our Product</div>
-            <div class="nav-item">Call Us</div>
-        </div>
-    </header>
-    <!--main-->
-    <main class="main">
-        <!--Banner-->    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>E-Groceries</title>
+    </head>
+    <body class="container">
+        <!--header-->
+        <header class="header">
+            <div class="logo">moqups</div>
+            <div class="nav-bar">
+                <div class="nav-item"><a href="#home">Home</a></div>
+                <div class="nav-item" id="item-2"><a href="#our-package">Our Product</a></div>
+                <div class="nav-item"><a href="#call-us">Call Us</a></div>
+            </div>
+        </header>
+        <!--main-->
+        <main class="main">
+            <!--Banner-->    
             <section id="home">
                 <div class="banner">
                     <p class="main-head">Top Rated E-Groceries Shop in Indonesian</p>
                     <p class="sub-head">Every Day with best ingredients</p>
-                </div>
+                </div>            
             </section>
-        <!--Form Menu-->
+            <!--Form Menu-->
             <section class="menu">
                 <div class="form" id="form-kiri">   
                     <div class="slider"> 
@@ -100,7 +100,13 @@
                         <label for="input-email">Email Address:</label><br>
                         <input type="text" name="input-email" id="input-email" placeholder="example@email.com" required>
                         <p></p>
-                        <label for="interest">What are you interested in?</label><br>
+                        <label for="input-phone">Phone Number:</label><br>
+                        <input type="text" name="input-phone" id="input-phone" placeholder="08xxxxxxx" required maxlength="13">
+                        <p></p>
+                        <label for="input-pesan">Message:</label><br>
+                        <textarea name="input-pesan" id="input-pesan" placeholder="Input your message here.." required></textarea>
+                        <p></p>
+                        <!-- <label for="interest">What are you interested in?</label><br>
                         <select name="interest" id="interest" onClick="document.getElementById('interest').style.color='black'" style="color: gray;" required>
                                 <option value="" selected hidden> Select option</option>
                                 <option value="1">Sayur</option>
@@ -108,18 +114,77 @@
                                 <option value="3">Daging</option>
                                 <option value="3">Bumbu Dapur</option>
                                 <option value="3">Peralatan Masak</option>
-                        </select>
+                        </select> -->
                         <p></p>
                         <input class="button1" type="button" value="SEND">
                     </form>
                 </div>
+            </section>   
+            <section id="our-package">
+                <div class="banner-our-package">
+                   <p>Our Package</p>     
             </section>
-            
-    </main>
-    <!--footer-->
-    <footer class="footer">
-        <p>Copyrights © 2023 Ricky Romadhona.</p>
-    </footer>
-    <script src="./js/index.js"></script>
-</body>
+            <section id="daftar-package">
+                <div class="product-atas">
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Fresh Vegetable</h3>
+                            <p>Sayuran segar langsung dari sumber pertanian terbaik</p>    
+                        </div>
+                    </div> 
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-2">
+                            <h3>Fresh Fruit</h3>
+                            <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>    
+                        </div>
+                    </div>  
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-3">
+                            <h3>Instant Delivery</h3>
+                            <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>    
+                        </div>
+                    </div>        
+                </div>
+                <div class="product-bawah">
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Kitchen Ingredient</h3>
+                            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>    
+                        </div>
+                    </div> 
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Kitchen Set</h3>
+                            <p>Segala jenis alat masa untuk membantu kamu memasak</p>    
+                        </div>
+                    </div>  
+                    <img src="./assets/idea.jpg" alt="idea" id="idea">
+                    <div class="p-1">
+                        <div class="isi-p-1">
+                            <h3>Bunding Set</h3>
+                            <p>Bingung masak apa? <br>
+                                Sudah tersedia paket untuk kamu masak di dapur mu
+                            </p>    
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            <section id="call-us">
+                <h1>Your Closing Argument Headline</h1>
+                <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla</p>
+                <button>CALL TO ACTION</button>
+            </section>
+        </main>
+        <!--footer-->
+        <footer class="footer">
+            <h3 style="font-weight: 700; font-style: italic;">moqups</h3>
+            <p style="padding: 0;">Copyrights © 2023 Ricky Romadhona.</p>
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
 </html>

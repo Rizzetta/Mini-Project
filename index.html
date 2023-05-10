@@ -28,85 +28,97 @@
             </section>
         <!--Form Menu-->
             <section class="menu">
-                <div class="form" id="form-kiri">
-                    <img src="./assets/vege2.png" alt="gambarsayur" id="sayur">
-                    <p>"setiap hari beli sayur buah yang fresh disini "</p>
-                    
+                <div class="form" id="form-kiri">   
                     <div class="slider"> 
                         <div class="slide-coment" id="pic1">
-                            <img src="./assets/1.jpg" alt="profile-pic">
+                            <img src="./assets/basket-full-3.png" alt="gambarsayur" class="layanan">
+                            <p>"Setiap hari beli sayur buah yang fresh disini"</p>
                             <div class="people">
-                                <h3>Florence Hudges</h3>
-                                <p>Ibu Rumah Tangga, 28</p>    
+                                <img src="./assets/1.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Florence Hudges</h3>
+                                    <p>Ibu Rumah Tangga, 28</p>    
+                                </div>
                             </div>       
                         </div>
                         <div class="slide-coment" id="pic2">
-                            <img src="./assets/2.jpg" alt="profile-pic">
+                            <img src="./assets/service-fix2.png" alt="gambarsayur" class="layanan">
+                            <p>"Pelayanan baik dan ramah"</p>
                             <div class="people">
-                                <h3>Ricky R</h3>
-                                <p>Teknisi, 25</p>    
+                                <img src="./assets/2.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Cornelius Frindavan</h3>
+                                    <p>Penjual street food, 25</p>  
+                                </div>  
                             </div>       
                         </div>     
                         <div class="slide-coment" id="pic3">
-                            <img src="./assets/3.jpg" alt="profile-pic">
+                            <img src="./assets/product.png" alt="gambarsayur" class="layanan">
+                            <p>"Produk lengkap dan selalu dalam keadaan fresh"</p>
                             <div class="people">
-                                <h3>Rizzetta Cornelia</h3>
-                                <p>Manager, 26</p>    
+                                <img src="./assets/3.jpg" alt="profile-pic" id="profile-pic">
+                                <div class="keterangan">
+                                    <h3>Rizzetta Cornelia</h3>
+                                    <p>Manager restaurant Mantap Jawa, 26</p>    
+                                </div>
                             </div>       
                         </div>     
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
+                        <br>
+                        <div>
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div> 
                     </div>
-                    <br>
-                    <div>
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>  
-                             
+                    <section class="pilihan" id="pilihan">
+                        <div class="header-space">
+                            <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                        </div>
+                        <div class="space-benefit">
+                            <div class="num-benefit">
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                            </div>
+                            <div class="benefit">
+                                <p>Your first feature, written in the form of a benefit statement.</p>
+                                <p>Your second feature, written in the form of a benefit statement.</p>
+                                <p>Your third feature written, in the form of a benefit statement.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="form" id="form-kanan">
                     <h3 style="margin: 0px;">Contact Us</h3>
-                    <p style="font-size: 11px; padding-bottom: 8%;">Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                    <p style="font-size: 11px; padding: 1% 10%;">Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
                     <form action="#" class="form-utama">
                         <label for="input-nama">Your Name:</label><br>
-                        <input type="text" name="input-nama" id="input-nama" placeholder=" First and last name" required>
+                        <input type="text" name="input-nama" id="input-nama" placeholder="First and last name" required>
                         <p></p>
                         <label for="input-email">Email Address:</label><br>
-                        <input type="text" name="input-email" id="input-email" placeholder=" example@email.com" required>
+                        <input type="text" name="input-email" id="input-email" placeholder="example@email.com" required>
                         <p></p>
                         <label for="interest">What are you interested in?</label><br>
                         <select name="interest" id="interest" onClick="document.getElementById('interest').style.color='black'" style="color: gray;" required>
                                 <option value="" selected hidden> Select option</option>
                                 <option value="1">Sayur</option>
                                 <option value="2">Buah</option>
+                                <option value="3">Daging</option>
+                                <option value="3">Bumbu Dapur</option>
+                                <option value="3">Peralatan Masak</option>
                         </select>
                         <p></p>
                         <input class="button1" type="button" value="SEND">
                     </form>
                 </div>
             </section>
-            <section class="pilihan">
-                <div class="header-space">
-                    <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
-                </div>
-                <div class="space-benefit">
-                    <div class="num-benefit">
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                    </div>
-                    <div class="benefit">
-                        <p>Your first feature, written in the form of a benefit statement.</p>
-                        <p>Your second feature, written in the form of a benefit statement.</p>
-                        <p>Your third feature written, in the form of a benefit statement.</p>
-                    </div>
-                </div>
-            </section>
+            
     </main>
     <!--footer-->
     <footer class="footer">
-        <p>Copyrights © 2023 Ricky R.</p>
+        <p>Copyrights © 2023 Ricky Romadhona.</p>
     </footer>
     <script src="./js/index.js"></script>
 </body>

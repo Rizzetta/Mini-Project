@@ -1,8 +1,6 @@
 .container {
     background-color:#f5f5f5;
-    width:auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 99%;
     font-family: 'Open Sans', sans-serif;
     border: 2px solid rgb(207, 207, 207);
     border-radius: 3px;
@@ -50,6 +48,7 @@
 }
 .main {
     background-color: white;
+    width: 100%;
 }
 
 #home {
@@ -58,12 +57,15 @@
     flex-direction: column;
 }
 
+.banner {
+    text-align: center;
+}
+
 .main-head {
     color: rgb(59, 71, 84);
     font-size: 28px;
     font-weight: 700;
     width: 441px;
-    text-align: center;
     word-wrap: break-word;
 }
 
@@ -71,46 +73,46 @@
     color: rgb(121, 141, 163);
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
 }
 
 .menu {
-    border: top;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 5%;
 }
 
 .form {
-    width: auto;
-    /* padding-top: 3%; */
+    width: 100%;
 }
 
 #form-kiri {
     display: flex;
     flex-direction: column;
+    height: auto;
     align-items: center;
     text-align: center;
     font-style: italic;
     font-size: 11px;
     font-weight: 400;
     width: min-content;
+    margin: 20px;
 }
 
-#form-kiri #sayur {
-    width: fit-content;
-    max-width: 400px;
-    border: 2px solid grey;
+.slide-coment .layanan {
+    width: 410px;
+    height: 273px;
+    border: 2px white;
     border-radius: 4px;
 }
 
-#form-kanan {    
-    border: 1px solid black;
+#form-kanan { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    border: 1px solid rgb(202, 202, 202);
     box-sizing: border-box;
     background-color: rgb(203, 204, 204);
     border-radius: 5px;
-    /* margin-left: 40px; */
-    margin-right: 10px;
     padding: 30px 10px;
     width: 300px;
     height: fit-content;
@@ -144,67 +146,52 @@
 }
 
 .slider {
-  width: 250px;
-  height: auto;
-  position: relative;
-  padding: 0;
-  border-image-slice: 1;
-  border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: auto;
+    position: relative;
+    padding: 0;
+    border-image-slice: 1;
+    border-width: 5px;
 }
 
 .slide-coment {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
     box-sizing: border-box;
     align-items: center;
-    margin-top: 30px;
     text-align: left;
     font-style: normal;
     font-size: 11px;
-    border: 1px solid grey;
-    border-radius: 3px;
     padding: 10px 20px;
 }
 
 .people {
-    padding-left: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
-.slide-coment img{
+.people h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.people .keterangan {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.slide-coment #profile-pic{
     width: 60px;
-    height: auto;
+    height: 60px;
     border: 3px solid #fff;
 	border-radius: 50%;
 	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-
-.slider #pic1 {
-    background: #42378f;
-    background-image: url("../img/pen.png");
-    /* fallback */
-    background-image: url("../img/pen.png"), linear-gradient(315deg, #42378f 0%, #f53844 74%);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-}
-
-.slider #pic2 {
-    background: #045de9;
-    background-image: url("../img/pen-2.png");
-    /* fallback */
-    background-image: url("../img/pen-2.png"), linear-gradient(315deg, #e904de 0%, #09c6f9 74%);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-}
-
-.slider #pic3 {
-    background: #7f53ac;
-    background-image: url("../img/pen-3.png");
-    /* fallback */
-    background-image: url("../img/pen-3.png"), linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
 }
 
 .slider .prev, .slider .next {
@@ -216,7 +203,7 @@
     width: auto;
     padding: 5px;
     margin-top: -22px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 15px;
     -webkit-transition: 0.6s ease;
@@ -229,7 +216,7 @@
 }
 
 .slider .next {
-    right: 0;
+    right: 0px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -239,7 +226,7 @@
 
 .dot {
     cursor: pointer;
-    height: 15px;
+    height: 1px;
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
@@ -279,7 +266,7 @@
     }
 }
 
-.pilihan {
+#pilihan {
     display: flex;
     flex-direction: column;
     font-style: normal;
@@ -318,12 +305,14 @@
     padding: 12px 10px;
     margin: 0px;
     font-size: 11px;
+    text-align: justify;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     background-color: white;
+    font-size: 11px;
     color: rgb(121, 141, 163);
     padding-top: 20%;
 }

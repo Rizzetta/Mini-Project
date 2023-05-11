@@ -1,6 +1,5 @@
 .container {
     background-color:#f5f5f5;
-    width: 99%;
     font-family: 'Open Sans', sans-serif;
     border: 2px solid rgb(207, 207, 207);
     border-radius: 3px;
@@ -15,31 +14,37 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid grey;
     background-color: white;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 13px;
     padding-top: 0px;
-    width: auto;
 }
 
 .nav-bar {
     display: flex;
-    border: 2px solid black;
-    border-radius: 5px;
+    align-items: center;
     margin-top: 7px;
+    height: 50px;
+    padding: 0;  
 }
 
 .nav-item {
-    min-width: 80px;
     text-align: center;
-    padding: 3px;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-#item-2 {
-    border-left: 2px solid black;
-    border-right: 2px solid black;    
+#item-1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#item-3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .logo {
@@ -47,6 +52,7 @@
     font-size: 20px;
     font-style: italic;
 }
+
 .main {
     background-color: white;
     width: 100%;
@@ -64,15 +70,14 @@
 
 .main-head {
     color: rgb(59, 71, 84);
-    font-size: 28px;
+    font-size: 64px;
     font-weight: 700;
-    width: 441px;
     word-wrap: break-word;
 }
 
 .sub-head {
     color: rgb(121, 141, 163);
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -84,20 +89,14 @@
 
 }
 
-.form {
-    width: 100%;
-}
-
 #form-kiri {
     display: flex;
     flex-direction: column;
     height: auto;
     align-items: center;
     text-align: center;
-    font-style: italic;
-    font-size: 11px;
+    justify-content: center;
     font-weight: 400;
-    width: min-content;
     margin: 20px;
 }
 
@@ -111,24 +110,22 @@
 #form-kanan { 
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    border: 1px solid rgb(202, 202, 202);
+    justify-content: center;  
     box-sizing: border-box;
+    border: 1px solid rgb(202, 202, 202);
     background-color: rgb(203, 204, 204);
     border-radius: 5px;
-    padding: 30px 10px;
-    width: 300px;
+    padding: 5%;
     height: fit-content;
 }
 
 #form-kanan label {
     font-weight: 700;
-    font-size: 12px;
 }
 
 #form-kanan input {
-    width: 206px;
-    height: 34px;
+    width: 100%;
+    height: 50px;
     border-radius: 4px;
     border: 2px solid black;
 }
@@ -141,14 +138,14 @@
 } */
 
 #form-kanan textarea {
-    width: 206px;
+    width: 100%;
     height: 70px;
     border-radius: 4px;
     border: 2px solid black;
 }
 
 #form-kanan .button1 {
-    width: 214px;
+    width: 100%;
     height: 40px;
     color: white;
     border: 0px;
@@ -173,15 +170,15 @@
     box-sizing: border-box;
     align-items: center;
     text-align: left;
-    font-style: normal;
-    font-size: 11px;
+    font-style: italic;
     padding: 10px 20px;
 }
 
 .people {
-    margin: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    font-style: normal;
 }
 
 .people h3 {
@@ -197,8 +194,8 @@
 }
 
 .slide-coment #profile-pic{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border: 3px solid #fff;
 	border-radius: 50%;
 	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
@@ -209,7 +206,7 @@
     font-style: normal;
     cursor: pointer;
     position: absolute;
-    top: 65%;
+    top: 73%;
     width: auto;
     padding: 5px;
     margin-top: -22px;
@@ -258,24 +255,6 @@
             animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {
-      opacity: .4;
-    }
-    to {
-      opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-      opacity: .4;
-    }
-    to {
-      opacity: 1;
-    }
-}
-
 #pilihan {
     display: flex;
     flex-direction: column;
@@ -287,34 +266,29 @@
 .header-space {
     text-align: left;
     font-weight: 700;
-    font-size: 13px;
 }
 
 .space-benefit {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 .num-benefit p {
-    width: 20px;
+    width: auto;
     height: auto;
-    border: 10px #868686;
+    border: 1px solid rgb(202, 202, 202);
     border-radius: 50%;
     color: rgb(159, 175, 193);
-    background-color: #868686;
+    background-color: rgb(202, 202, 202);
     font-weight: 700;
-    font-size: 14px;
     text-align: center;
-    padding: 10px;
+    padding: 13px 20px;
 }
 
 .benefit p {
-    max-width: 300px;
-    padding: 12px 10px;
+    padding: 12px 20px;
     margin: 0px;
-    font-size: 11px;
     text-align: justify;
 }
 
@@ -398,21 +372,29 @@
 
 #call-us p {
     text-align: center;
-    font-size: 12px;
-    width: 600px;
+    width: 500px;
     height: 36px;
 }
 
-#call-us button {
+#call-us h1 {
+    font-size: 32px; 
+    margin: 2%;
+}
+
+#call-us #button-form {
     width: 214px;
     height: 40px;
     margin-top: 3%;
     color: white;
     border: 0px;
-    font-size: 12px;
     font-weight: 700;
     background-color: rgb(32, 33, 43);
     border-radius: 3px;
+}
+
+#call-us a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer {
@@ -432,24 +414,203 @@
     font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+ 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 75%;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    /* #daftar-package .p-1 {
+        width: 100%;
+    } */
+    #call-us {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .header {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        padding: 0;
     }
     .logo {
         margin-bottom: 3%;
     }
-    .nav-bar {
+    /* .nav-item {
         border: 0;
+        border-bottom: 1px solid grey;
+    } */
+    .banner h1{
+        font-size: large;
     }
-    #item-2 {
-        border: 0;
-        border-bottom: 1px solid #717171;
+    .banner p {
+        font-size: medium;
     }
-    .nav-item {
-        border-bottom: 1px solid #717171;
+    .menu {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form {
+        width: 90%;
+        margin: 0;
+    }
+    #form-kiri {
+        margin: 0;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+    .pilihan {
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 10px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
+    }
+    #daftar-package .product-atas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .product-bawah {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #daftar-package .p-1 {
+        width: 100%;
+    }
+    #call-us {
+        text-align: center;
+    }
+    #call-us p {
+        width: 100%;
+        font-size: smaller;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        margin-bottom: 3%;
+    }
+    .main-head {
+        width: 100%;
+    }
+    .sub-head {
+        width: 100%;
+    }
+    .banner h1{
+        font-size: xx-large;
+    }
+    .banner p {
+        font-size: large;
+    }
+    .slider {
+        width: 90%;
+    }
+    .slide-coment {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .slide-coment P {
+        height: 50px;
+    }
+    .people #profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .pilihan {
+        font-size: 14px;
+        margin-bottom: 10%;
+    }
+    .people {
+        margin-top: 0;
+    }
+    .keterangan {
+        font-size: 14px;
+    }
+    .slide-coment .layanan {
+        width: 250px;
+        height: 186px;
+    }
+    #daftar-package {
+        font-size: small;
     }
     .menu {
         width: 100%;
@@ -458,7 +619,11 @@
         align-items: center;
         text-align: center;
     }
-
+    #form-kanan {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
     #daftar-package .product-atas {
         display: flex;
         flex-direction: column;
@@ -483,5 +648,7 @@
     }
     #call-us p {
         width: 80%;
+        height: fit-content;
+        margin-bottom: 30%;
     }
 }

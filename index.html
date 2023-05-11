@@ -73,9 +73,6 @@
                         </div> 
                     </div>
                     <section class="pilihan" id="pilihan">
-                        <!-- <div class="header-space">
-                            <p>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
-                        </div> -->
                         <div class="space-benefit">
                             <div class="num-benefit">
                                 <p>1</p>
@@ -93,30 +90,20 @@
                 <div class="form" id="form-kanan">
                     <h1 style="margin: 0px;">Contact Us</h1>
                     <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
-                    <form action="#" class="form-utama">
-                        <label for="input-nama">Your Name:</label><br>
-                        <input type="text" name="input-nama" id="input-nama" placeholder="First and last name" required>
+                    <form class="form-utama" onsubmit="return validateForm()"> 
+                        <label for="input-nama">Nama:</label><br>
+                        <input type="text" name="input-nama" id="input-nama" placeholder="Masukkan nama lengkap anda" >
                         <p></p>
-                        <label for="input-email">Email Address:</label><br>
-                        <input type="text" name="input-email" id="input-email" placeholder="example@email.com" required>
+                        <label for="input-email">Email:</label><br>
+                        <input type="text" name="input-email" id="input-email" placeholder="contoh@email.com" >
                         <p></p>
-                        <label for="input-phone">Phone Number:</label><br>
-                        <input type="text" name="input-phone" id="input-phone" placeholder="08xxxxxxx" required maxlength="13">
+                        <label for="input-phone">Nomor Telepon:</label><br>
+                        <input type="text" name="input-phone" id="input-phone" placeholder="Nomor telepon anda" >
                         <p></p>
-                        <label for="input-pesan">Message:</label><br>
-                        <textarea name="input-pesan" id="input-pesan" placeholder="Input your message here.." required></textarea>
+                        <label for="input-pesan">Pesan:</label><br>
+                        <textarea name="input-pesan" id="input-pesan" placeholder="Masukkan pesan anda disini.." ></textarea>
                         <p></p>
-                        <!-- <label for="interest">What are you interested in?</label><br>
-                        <select name="interest" id="interest" onClick="document.getElementById('interest').style.color='black'" style="color: gray;" required>
-                                <option value="" selected hidden> Select option</option>
-                                <option value="1">Sayur</option>
-                                <option value="2">Buah</option>
-                                <option value="3">Daging</option>
-                                <option value="3">Bumbu Dapur</option>
-                                <option value="3">Peralatan Masak</option>
-                        </select> -->
-                        <p></p>
-                        <input class="button1" type="button" value="SEND">
+                        <input class="button1" id="button1" type="submit" value="SEND"></input>
                     </form>
                 </div>
             </section>   
@@ -177,7 +164,7 @@
             <section id="call-us">
                 <h1>Butuh bantuan?</h1>
                 <p>Jangan ragu hubungi pihak customer service kami dengan menkan tombol dibawah untuk mengakses laman customer service kami.</p>
-                <button id="button-form"><a href="#form-kanan">Customer Service</a></button>
+                <button id="button-form"><a href="#form-kanan"></a>Customer Service</button>
             </section>
         </main>
         <!--footer-->
